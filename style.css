@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.areaText{
+    width: 50%;
+    height: 100%;
+}
+
+.areaInputToDale{
+    background: rgb(163, 17, 182);
+    width: 50%;
+    height: 1000%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+#textToDele{
+    position: fixed;
+    top: 45vh;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: rgb(60, 0, 68);
+    size: 50px;
+    animation: fadeInputText 2s;
+    font-weight: 800;
+}
+
+
+#botaoAdd{
+    position: fixed;
+    top: 52vh;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background: black;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 1s;
+    animation: fadeBotaoAdd 2.5s ease-out;
+}
+
+#botaoAdd:hover{
+    color: black;
+    background: white;
+}
+
+/* Area do Texto */
+.TextoToDale{
+    position: relative;
+    top: 3%;
+    left: 1%;
+    color: rgb(90, 0, 102);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.botaoRemover{
+    position: absolute;
+    top: 0px;
+    left: 540px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    transition: 1s;
+}
+
+.botaoRemover:hover{
+    background: white;
+    color: black;
+}
+
+/* Animaçoes */
+@keyframes fadeBotaoAdd{
+    0%{
+        left: 90%;
+        opacity: 0;
+    }
+
+    50%{
+        left: 75%;
+        opacity: 1;
+    }
+
+    80%{
+        width: 155px;
+        height: 50px;
+    }
+
+    90%{
+        width: 150px;
+        height: 45px;
+    }
+}
+
+@keyframes fadeInputText{
+    0%{
+        left: 90%;
+        opacity: 0;
+    }
+
+    100%{
+        left: 75%;
+        opacity: 1;
+    }
+}
